@@ -114,7 +114,7 @@ figcaption {
 	background-color: #4aaaa5;
 	color: #fff;
 	padding: 22px;
-	width: 100%;
+	width: 250px;
 	text-align: center;
 	margin-top: -90px;
 	font-size: 20px;
@@ -196,6 +196,10 @@ div.footer {
    bottom:0px;
 }
 
+.brClear {
+	clear: both;
+}
+
 /* BONUS HOVER */
 
 nav a:hover {
@@ -203,6 +207,7 @@ nav a:hover {
 	font-weight: 700;
 	color: #2c3e50;
 }
+
 
 figure:hover figcaption {
 	color: yellow;
@@ -218,3 +223,73 @@ figure:hover figcaption {
 	border-radius: 6px;
 }
 
+@media screen and (max-width: 980px){
+	body {
+		height: 1500px;
+	}
+
+	.container {
+		width: 750px;
+	}
+
+	img.mattPic {
+		width: 200px;
+	}
+
+	figure {
+		width: 100%;
+		display: block;
+	}
+	
+	.main, .socialMedia {
+		box-shadow: none;
+	}
+
+	.main	{
+		width: 400px;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+
+	body {
+		height: 1800px;
+	}
+
+	.container {
+		width: 90%;
+	}
+
+	img.mattPic {
+		width: 300px;
+	}
+	
+	.main, .socialMedia {
+		box-shadow: none;
+		width: 100%;
+		float: none;
+	}
+	
+}
+
+@media screen and (max-width: 640px){
+	.container {
+		width: 90%;
+	}
+	
+	header h1	{
+		text-align: center;
+		width: 100%;
+	}
+
+	nav {
+		float: none;
+		background-color: white;
+	}
+
+	.main,.socialMedia {
+		margin: 12px;
+	}
+	
+}
